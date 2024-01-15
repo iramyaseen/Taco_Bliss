@@ -1,0 +1,66 @@
+const LocationMap = [
+  {
+    city: "Brickell",
+    phone: "(305) 381-0211",
+    email: "Info@TalkinTacos.net",
+    location: "97 SW 8th St Miami, FL 33130",
+    time: "Closed",
+  },
+  {
+    city: "Miramar",
+    phone: "(954) 995-3255",
+    email: "Info@TalkinTacos.net",
+    location: "3456 Red RdMiramar, FL 33025",
+    time: "Open until 2:00 AM",
+  },
+  {
+    city: "Wynwood",
+    phone: "(786) 779-3885",
+    email: "Info@TalkinTacos.net",
+    location: "172 Northwest 24th StMiami, FL 33127",
+    time: "Open until 10:00 PM",
+  },
+  {
+    city: "Wellington",
+    phone: "(954) 838-1853",
+    email: "Info@TalkinTacos.net",
+    location: "10140 Forest Hill Blvd, #170Wellington, FL 33414",
+    time: "Open until 2:00 AM",
+  },
+  {
+    city: "Coral Springs",
+    phone: "(954) 290-0941",
+    email: "Info@TalkinTacos.net",
+    location: "2866 N University DrCoral Springs, FL 33065",
+    time: "Open until 2:00 AM",
+  },
+  {
+    city: "Jacksonville",
+    phone: "(904) 853-5140",
+    email: "Info@TalkinTacos.net",
+    location: "1300 Beach BlvdJacksonville Beach, FL 32250",
+    time: "Open until 10:00 PM",
+  },
+  {
+    city: "Atlanta",
+    phone: "(321) 333-2984",
+    email: "Info@TalkinTacos.net",
+    location: "2625 Piedmont Rd NE, #34AAtlanta, GA 30324",
+    time: "Open until 10:00 PM",
+  },
+  {
+    city: "Doral - Opening Dec 9!",
+    phone: "(786) 918-2908",
+    email: "Info@TalkinTacos.net",
+    location: "7586 NW 104th Ave, #G103Doral, FL 33178",
+    time: "Open until 10:00 PM",
+  },
+  {
+    city: "Orlando",
+    phone: "(407) 704-4480",
+    email: "Info@TalkinTacos.net",
+    location: "3123 S Orange AveOrlando, FL 32806",
+    time: "Open until 10:00 PM",
+  },
+];
+export default LocationMap;
