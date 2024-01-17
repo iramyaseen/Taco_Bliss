@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import Banner from "./Banner";
-import Hero from "./Hero";
 import { MdDarkMode } from "react-icons/md";
-import Products from "./Products";
-import OrderList from "./OrderList";
-import Footer from "./Footer";
 
 const Header = () => {
   const [switchTheme, setSwitchTheme] = useState(false);
@@ -125,11 +120,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Banner />
-      <Hero />
-      <Products />
-      <OrderList />
-      <Footer />
     </>
   );
 };
