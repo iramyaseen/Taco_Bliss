@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { MdDarkMode } from "react-icons/md";
 
@@ -12,12 +13,19 @@ const Header = () => {
         <div className="container header-box">
           <div className="header-left-box">
             <div>
-              <img src="/header_logo.png" alt="Logo" height={50} />
+              <Link href="/">
+                <img src="/header_logo.png" alt="Logo" height={50} />
+              </Link>
             </div>
             <div className="header-list">
               <ul>
-                <li>Home</li>
-                <li>Menu</li>
+                <li>
+                  {" "}
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/menu">Menu</Link>
+                </li>
                 <li>Location</li>
                 <li>Our Story</li>
                 <li>Events</li>
