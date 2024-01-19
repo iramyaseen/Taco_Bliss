@@ -1,19 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import { MdFilterAlt } from "react-icons/md";
 
-const SubMenu = () => {
+const SubMenu = ({ onCategoryClick }) => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  const categories = [
+    "Tacos",
+    "Entrées",
+    "Sides",
+    "Light Menu",
+    "Dessert",
+    "Homemade Drinks",
+    "Beverages",
+    "House Juices",
+  ];
+  const handleCategoryClick = (category) => {
+    onCategoryClick(category);
+    setSelectedCategory(category);
+  };
   return (
     <div className="bg-sub-menu">
-      <div className="container sub-menu-list">
+      <div
+        className="container sub-menu-list"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <ul>
-          <li>Tacos</li>
-          <li>Entrées</li>
-          <li>Sides</li>
-          <li>Light Menu</li>
-          <li>Dessert</li>
-          <li>Homemade Drinks</li>
-          <li>Beverages</li>
-          <li>House Juices (Organic / Non-GMO)</li>
+          {categories.map((category, index) => (
+            <li
+              key={index}
+              onClick={() => handleCategoryClick(category)}
+              className={
+                selectedCategory === category
+                  ? "selected-menu-sub"
+                  : "hover-menu-sub"
+              }
+            >
+              {category}
+            </li>
+          ))}
         </ul>
+        <MdFilterAlt />
       </div>
     </div>
   );
