@@ -14,6 +14,52 @@
   --theme_bg_green: #06b906;
   --theme_heading_text_color: #ffffff;
   --theme_text_color: #dadada;
+  --theme_light_white: #ffffff;
+  --theme_gray_color: #828282;
+  --theme_border_color: #b7b7b7;
+  --theme_bg_input: #8a8a8a;
+}
+/* Login */
+.login-box {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+.login-screen {
+  background-color: var(--theme_bg_black);
+  color: var(--theme_light_white);
+  height: fit-content;
+  padding: 45px 30px;
+}
+.input-field {
+  display: block;
+}
+.input-field input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  background-color: var(--theme_bg_input);
+  color: var(--theme_light_white);
+}
+.input-field input::placeholder {
+  color: rgba(74, 74, 74, 1);
+}
+.login-form h3 {
+  font-size: 30px;
+  border-bottom: 2px solid var(--theme_border_color);
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+.continue-btn {
+  border: 2px solid var(--theme_bg_green);
+  background-color: transparent;
+  color: var(--theme_heading_text_color);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
 }
 a {
   list-style: none;

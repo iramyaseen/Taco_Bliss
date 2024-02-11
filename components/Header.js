@@ -26,7 +26,9 @@ const Header = () => {
                 <li>
                   <Link href="/menu">Menu</Link>
                 </li>
-                <li>Location</li>
+                <li>
+                  <Link href="/location">Location</Link>
+                </li>
                 <li>Our Story</li>
                 <li>Events</li>
                 <li>
