@@ -19,6 +19,7 @@
   --theme_border_color: #b7b7b7;
   --theme_bg_input: #8a8a8a;
 }
+
 /* Login */
 .login-box {
   height: 100vh;
@@ -26,22 +27,35 @@
   justify-content: center;
   display: flex;
   margin: auto;
+  background-color: var(--theme_bg_black);
 }
 .login-screen {
-  background-color: var(--theme_bg_black);
+  border: 1px solid var(--theme_border_color);
+  border-radius: 4px;
   color: var(--theme_light_white);
   height: fit-content;
   padding: 45px 30px;
+  width: fit-content !important;
 }
-.input-field {
+.input-field,
+.input-password-field {
   display: block;
+  margin-bottom: 30px;
 }
-.input-field input {
+.input-field input,
+.input-password-field input {
   border: none;
   width: 100%;
-  height: 30px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-top: 10px;
   background-color: var(--theme_bg_input);
   color: var(--theme_light_white);
+}
+.input-field input:focus,
+.input-password-field input:focus {
+  outline: none;
 }
 .input-field input::placeholder {
   color: rgba(74, 74, 74, 1);
@@ -52,6 +66,11 @@
   padding-bottom: 10px;
   margin-bottom: 40px;
 }
+.custom-checbox {
+  border: 2px solid var(--theme_bg_green) !important;
+  width: 20px;
+}
+
 .continue-btn {
   border: 2px solid var(--theme_bg_green);
   background-color: transparent;
@@ -60,6 +79,17 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.continue-btn:hover {
+  background-color: var(--theme_bg_green);
+}
+.sign-up {
+  border-bottom: 2px solid var(--theme_bg_green);
+}
+.sign-up:hover {
+  color: var(--theme_bg_green);
 }
 a {
   list-style: none;
@@ -640,4 +670,71 @@ a {
   cursor: pointer;
 
   color: var(--theme_bg_green);
+}
+
+/* orders */
+.orders {
+  background-color: #232323;
+  padding: 0.5rem;
+}
+
+.custom-bg {
+  background-color: #161616;
+}
+
+.custom-with {
+  width: 20rem;
+}
+
+.custom-color-2 {
+  background-color: #06b906;
+}
+
+.ri-check-line {
+  color: #06b906;
+}
+
+/*  */
+.close {
+  background-color: #161616;
+  color: white;
+  padding: 5px;
+}
+
+.custom-bg {
+  background-color: var(--theme_bg_black);
+}
+
+.row {
+  margin-top: 4rem;
+}
+
+.custom-color-1 {
+  color: #b5b5b5;
+}
+
+.custom-color-2 {
+  color: #06b906;
+}
+
+.row .col-md-3 .card {
+  background: #161616;
+}
+
+.card .card-title,
+.card .card-text {
+  color: white;
+}
+
+.add-to-cart {
+  background-color: #06b906;
+}
+.copy-search {
+  border: 3px dotted var(--theme_bg_green);
+  background-color: transparent !important;
+  height: 70px;
+}
+.copy-search input {
+  background-color: transparent !important;
+  color: white;
 }

@@ -18,7 +18,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="header-list">
-              <ul>
+              <ul className="m-0">
                 <li>
                   {" "}
                   <Link href="/">Home</Link>
@@ -27,27 +27,15 @@ const Header = () => {
                   <Link href="/menu">Menu</Link>
                 </li>
                 <li>
-                  <Link href="/location">Location</Link>
+                  <Link href="/order">Orders</Link>
                 </li>
-                <li>Our Story</li>
-                <li>Events</li>
+                <li>Favourites</li>
                 <li>
-                  More {""}{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="14"
-                    viewBox="0 0 15 14"
-                    fill="none"
-                  >
-                    <path
-                      d="M4.11035 5.25L7.61035 8.75L11.1104 5.25"
-                      stroke="white"
-                      stroke-width="1.05"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <Link href="reward">Rewards</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href="/refer_earn">Refer & Earn</Link>
                 </li>
               </ul>
             </div>
@@ -75,7 +63,7 @@ const Header = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <p className="closed">
+            <p className="closed m-0">
               <span> Closed</span> {""}{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
